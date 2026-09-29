@@ -1,0 +1,245 @@
+/* ===== Academic personal site — Barron-style, modernized ===== */
+
+:root {
+  --text: #1f2328;
+  --muted: #59636e;
+  --faint: #8b949e;
+  --link: #1a56a0;
+  --link-hover: #0d3b73;
+  --accent: #b3541e;
+  --rule: #e3e8ee;
+  --card: #f7f9fc;
+  --max: 860px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+h1, h2, h3 {
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.25;
+}
+
+/* ---------- Header ---------- */
+.hero {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.hero-text { flex: 1 1 auto; }
+
+.hero h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+
+.hero p { margin-bottom: 14px; }
+
+.portrait {
+  flex: 0 0 190px;
+  margin-top: 8px;
+}
+
+.portrait img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(31, 35, 40, 0.14);
+}
+
+.links {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.links a {
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 500;
+  padding: 5px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--link);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.links a:hover {
+  background: var(--card);
+  border-color: var(--link);
+  text-decoration: none;
+}
+
+/* ---------- Sections ---------- */
+section { margin-top: 48px; }
+
+section h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 20px;
+}
+
+/* ---------- News ---------- */
+.news-list { list-style: none; }
+
+.news-list li {
+  display: flex;
+  gap: 18px;
+  padding: 5px 0;
+}
+
+.news-list .entry { flex: 1 1 auto; }
+
+.news-list .date {
+  flex: 0 0 86px;
+  color: var(--faint);
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  padding-top: 3px;
+  white-space: nowrap;
+}
+
+/* ---------- Publications ---------- */
+.pub {
+  display: flex;
+  gap: 26px;
+  padding: 18px;
+  margin: 0 -18px 10px;
+  border-radius: 12px;
+  transition: background 0.15s ease;
+}
+
+.pub:hover { background: var(--card); }
+
+.pub-thumb {
+  flex: 0 0 215px;
+  align-self: center;
+}
+
+.pub-thumb img {
+  width: 215px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+
+.pub-info { flex: 1 1 auto; }
+
+.pub-info h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.authors { font-size: 0.92rem; margin-bottom: 2px; }
+.authors strong { color: var(--text); }
+
+.venue {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.award {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.tldr {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.pub-links a {
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-right: 6px;
+  padding: 3px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+
+.pub-links a:hover {
+  border-color: var(--link);
+  background: #fff;
+  text-decoration: none;
+}
+
+/* ---------- Experience / Education ---------- */
+.exp-list { list-style: none; }
+
+.exp-list li { padding: 10px 0; }
+
+.exp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.exp-title { font-weight: 700; font-size: 0.98rem; }
+
+.exp-date {
+  color: var(--faint);
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.exp-list p {
+  font-size: 0.93rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 64px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--faint);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 720px) {
+  .hero { flex-direction: column-reverse; align-items: center; text-align: left; }
+  .portrait { margin: 0 0 6px; }
+  .pub { flex-direction: column; margin: 0 0 18px; padding: 14px; }
+  .pub-thumb, .pub-thumb img { width: 100%; flex-basis: auto; height: auto; }
+  .news-list li { flex-direction: column; gap: 0; padding: 8px 0; }
+  .news-list .date { flex-basis: auto; padding-top: 0; }
+  main { padding-top: 36px; }
+}

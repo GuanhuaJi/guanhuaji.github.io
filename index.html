@@ -1,65 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guanhua Ji</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guanhua Ji</title>
+  <meta name="description" content="Guanhua Ji — robotics researcher at the University of Pennsylvania GRASP Lab. Robot manipulation, cross-embodiment learning, and generative models for robot learning.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
 </head>
 <body>
-    <header id="hero">
-        <h1>Guanhua Ji — Robotics & AI Researcher</h1>
-        <p>M.S.E. Robotics candidate, University of Pennsylvania (2025 – 2027)</p>
-        <p>B.S. Computer Science, UCLA, GPA 3.99/4.0 (2021 – 2025)</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>I am a graduate researcher focused on cross‑embodiment policy learning and robot vision.
-            Leading the open‑source OXE++ initiative, I scaled 14 public datasets into 95 robot–dataset pairs (~7× growth) and pushed simulation success rates up to 67 %, with real‑world gains of 24–45 % and zero‑shot transfer up to 82 %.</p>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <p>University of Pennsylvania — M.S.E. Robotics, Aug 2025 – May 2027 (in progress)</p>
-            <p>University of California, Los Angeles (UCLA) — B.S. Computer Science, Sept 2021 – Jun 2025; GPA 3.99/4.0; Dean’s Honors List; UPE member</p>
-        </section>
-        <section id="research">
-            <h2>Research</h2>
-            <h3>OXE++: Scaling Robot Augmentation for Cross‑Embodiment Policy Learning</h3>
-            <p>Developed a MuJoCo + RoboSuite pipeline with SAM2 masks and ProPainter/E2FGVI inpainting; released dataset and code, achieving the performance boosts noted above.</p>
-            <h3>Human‑AI Collaboration for Hazard Mitigation</h3>
-            <p>Built Create3‑ and Go2‑based multi‑robot systems with SLAM Toolbox, Nav2, YOLOv8, and LLaMA 3 for real‑time detection and response; work submitted to IEEE HRI.</p>
-            <h3>3D Gaussian Splatting for Movie‑Clip Reconstruction</h3>
-            <p>Converted 2‑D video into dynamic 3‑D Gaussian scenes, introducing novel depth and mask losses for robust real‑time rendering.</p>
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>Guanhua Ji et al. “OXE++: Scaling Robot Augmentation for Cross‑Embodiment Policy Learning.” Science Robotics (submitted 2025).</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>Programming: C/C++, C#, Java, Python, HTML/CSS/JavaScript, Git, Vim, Linux</p>
-            <p>Frameworks &amp; Tools: PyTorch, TensorFlow, Keras, JAX, OpenCV, Pillow</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Phone: +1 424‑465‑0608 | Email: <a href="mailto:guanhuaji@g.ucla.edu">guanhuaji@g.ucla.edu</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Guanhua Ji</p>
-    </footer>
-    <script src="scripts.js"></script>
+<main>
+
+  <!-- ======================= Header ======================= -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Guanhua Ji</h1>
+      <p>
+        I am an M.S.E. student in Robotics at the University of Pennsylvania and a researcher at the
+        <a href="https://www.grasp.upenn.edu/">GRASP Lab</a>, advised by
+        <a href="https://nbfigueroa.github.io/">Prof.&nbsp;Nadia Figueroa</a>.
+        I also conduct research at UC Berkeley's Mechanical Systems Control Lab, advised by
+        <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof.&nbsp;Masayoshi Tomizuka</a>.
+        Previously, I was a research assistant in AUTOLab at
+        <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>, advised by
+        <a href="https://goldberg.berkeley.edu/">Prof.&nbsp;Ken Goldberg</a>.
+        I received my B.S. in Computer Science from UCLA in 2025.
+      </p>
+      <p>
+        My research focuses on <strong>robot learning for contact-rich manipulation</strong> and
+        <strong>generalization across robot embodiments</strong>. I develop methods that use generated
+        video and audio, haptic demonstrations, and robot data augmentation to help robots learn
+        reliable manipulation skills.
+      </p>
+      <nav class="links">
+        <a href="mailto:jgh1013@seas.upenn.edu">Email</a>
+        <a href="assets/cv.pdf?v=20260929">CV</a>
+        <a href="https://scholar.google.com/citations?user=HvPBwQoAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/GuanhuaJi">GitHub</a>
+        <a href="https://www.linkedin.com/in/guanhua-ji-a96053374/">LinkedIn</a>
+      </nav>
+    </div>
+    <figure class="portrait">
+      <img src="assets/photo.png" alt="Portrait of Guanhua Ji">
+    </figure>
+  </header>
+
+  <!-- ======================= News ======================= -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news-list">
+      <li><span class="date">Sep 2026</span><span class="entry">Our preprint <a href="https://arxiv.org/abs/2609.19137">Dreaming the Sound of Contact</a> is available, with <a href="https://dreamingcontactsound.github.io/#results">real-robot videos</a>.</span></li>
+      <li><span class="date">May 2026</span><span class="entry">Started working on haptic teleoperation for force-aware robot learning at Prof. Masayoshi Tomizuka's Mechanical Systems Control Lab, UC Berkeley.</span></li>
+      <li><span class="date">2026</span><span class="entry"><em>OXE-AugE</em> was accepted to <strong>ICML</strong> as a <strong>Spotlight</strong>!</span></li>
+      <li><span class="date">Oct 2025</span><span class="entry">Joined the Figueroa Robotics Lab at Penn GRASP.</span></li>
+      <li><span class="date">Aug 2025</span><span class="entry">Started my M.S.E. in Robotics at the University of Pennsylvania.</span></li>
+      <li><span class="date">Jun 2025</span><span class="entry">Graduated from UCLA with a B.S. in Computer Science (GPA 3.95).</span></li>
+    </ul>
+  </section>
+
+  <!-- ======================= Publications ======================= -->
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="pub">
+      <div class="pub-thumb">
+        <a href="https://dreamingcontactsound.github.io/" aria-label="Dreaming the Sound of Contact project page">
+          <img src="assets/dreaming-contact-concept.png" alt="Generated video provides robot motion and generated audio shapes contact-force profiles for wiping, peeling, pressing, and stacking" loading="lazy">
+        </a>
+      </div>
+      <div class="pub-info">
+        <h3>Dreaming the Sound of Contact: Leveraging Video and Audio Generation for Zero-Shot Force-Aware Manipulation and Data Generation</h3>
+        <p class="authors"><strong>Guanhua Ji*</strong>, Tianyu Li*, Dayoon Suh, Yuqian Zhang, Boyan Zhang, Nadia Figueroa</p>
+        <p class="venue">Submitted to <em>ICRA 2027</em> &nbsp;·&nbsp; *Equal contribution</p>
+        <p class="tldr">Generated video provides motion, while generated audio shapes desired contact-force profiles. Our pipeline achieves 90% zero-shot success across four contact-rich tasks, versus 20% for a kinematic-only baseline. We also generate 200 force-aware demonstrations to train Diffusion Policies that generalize to new object placements and appearances.</p>
+        <p class="pub-links">
+          <a href="https://dreamingcontactsound.github.io/">project page</a>
+          <a href="https://arxiv.org/abs/2609.19137">paper</a>
+          <a href="https://dreamingcontactsound.github.io/#results">videos</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb">
+        <img src="assets/oxe-auge-teaser.jpg" alt="OXE-AugE: the same scenes augmented with different robot embodiments">
+      </div>
+      <div class="pub-info">
+        <h3>OXE-AugE: A Large-Scale Robot Augmentation of OXE for Scaling Cross-Embodiment Policy Learning</h3>
+        <p class="authors"><strong>Guanhua Ji*</strong>, Harsha Polavaram*, Lawrence Yunliang Chen*, Sandeep Bajamahal, Zehan Ma, Simeon Adebola, Chenfeng Xu, Ken Goldberg</p>
+        <p class="venue"><em>ICML</em>, 2026 &nbsp;·&nbsp; <span class="award">Spotlight</span> &nbsp;·&nbsp; *Equal contribution</p>
+        <p class="tldr">AugE-Toolkit retargets existing demonstrations to new robot embodiments, producing over 4.4 million trajectories across nine embodiments. Scaling augmentation improves policy generalization to unseen robots and robustness to visual changes. Fine-tuned OpenVLA-OFT and π0 achieve average task scores of 75% and 82% on an unseen robot–gripper configuration.</p>
+        <p class="pub-links">
+          <a href="https://oxe-auge.github.io/">project page</a>
+          <a href="https://oxe-auge.github.io/static/OXE-AugE.pdf">paper</a>
+          <a href="https://github.com/GuanhuaJi/oxe-auge">code</a>
+          <a href="https://huggingface.co/oxe-auge">dataset</a>
+          <a href="https://www.youtube.com/watch?v=Nj0XP6ujhBE">video</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Experience ======================= -->
+  <section id="experience">
+    <h2>Research Experience</h2>
+    <ul class="exp-list">
+      <li>
+        <div class="exp-head">
+          <span class="exp-title">Mechanical Systems Control Lab, UC Berkeley</span>
+          <span class="exp-date">May 2026 – Present</span>
+        </div>
+        <p>Research intern advised by Prof. Masayoshi Tomizuka. Built a force-feedback teleoperation system and designed controlled experiments to study force regulation and task-phase encoding in demonstrations. Trained flow-matching policies for contact-rich manipulation.</p>
+      </li>
+      <li>
+        <div class="exp-head">
+          <span class="exp-title">Figueroa Robotics Lab, University of Pennsylvania</span>
+          <span class="exp-date">Oct 2025 – Present</span>
+        </div>
+        <p>Research intern advised by Prof. Nadia Figueroa. Proposed using generated video and audio for force-aware manipulation. Led pipeline development and real-robot experiments, and used the generated demonstrations to train Diffusion Policies.</p>
+      </li>
+      <li>
+        <div class="exp-head">
+          <span class="exp-title">AUTOLab, Berkeley AI Research (BAIR), UC Berkeley</span>
+          <span class="exp-date">Jan 2025 – Jan 2026</span>
+        </div>
+        <p>Research assistant advised by Prof. Ken Goldberg. Led development of AugE-Toolkit and physical experiments for cross-embodiment policy learning. Released OXE-AugE with over 4.4 million trajectories across nine embodiments.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ======================= Education ======================= -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="exp-list">
+      <li>
+        <div class="exp-head">
+          <span class="exp-title">University of Pennsylvania — M.S.E. in Robotics</span>
+          <span class="exp-date">2025 – 2027</span>
+        </div>
+      </li>
+      <li>
+        <div class="exp-head">
+          <span class="exp-title">UCLA — B.S. in Computer Science</span>
+          <span class="exp-date">2021 – 2025</span>
+        </div>
+        <p>GPA 3.95/4.0 · Dean's Honors List · Upsilon Pi Epsilon</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Guanhua Ji · Built with plain HTML&nbsp;&amp;&nbsp;CSS · <a href="https://github.com/GuanhuaJi">GitHub</a></p>
+  </footer>
+
+</main>
 </body>
 </html>
